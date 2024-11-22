@@ -10,7 +10,7 @@ class CalculatorController(
         val demlimiterController = DelimiterController(userInput)
         val numbers: List<String> = demlimiterController.checkDelimiter()
         val allNumbers = userInputValidator.validateUserInput(numbers)
-        val result = 0
+        val result = allNumbers.sum()
         userInteractionController.handleResult(result)
     }
 }
