@@ -3,5 +3,7 @@ class CalculatorController(
 ) {
     fun run() {
         userInteractionController.handleUserInput()
+        val result = 0
+        userInteractionController.handleResult(result)
     }
 }

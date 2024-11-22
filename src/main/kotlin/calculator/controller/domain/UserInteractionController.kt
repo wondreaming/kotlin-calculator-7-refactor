@@ -10,4 +10,8 @@ class UserInteractionController(
         val userInput = inputView.getUserInput()
         return userInput
     }
+
+    fun handleResult(result: Int) {
+        outputView.showResult(result)
+    }
 }
