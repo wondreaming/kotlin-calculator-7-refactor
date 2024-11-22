@@ -8,7 +8,7 @@ import calculator.constants.Delimiter.CUSTOM_DELIMITER_SUFFIX
 class DelimiterController(
     private val input: String
 ) {
-    fun checkDelimiter(): List<Int?> {
+    fun checkDelimiter(): List<String> {
         if (hasCustomDelimiter()) {
             val customDelimiter = getCustomDelimiter()
             val noCustomDelimiter = deleteCustomDelimiter()
@@ -33,13 +33,13 @@ class DelimiterController(
         return noCustomDelimiter
     }
 
-    private fun splitDelimiter(): List<Int?> {
-        val numbers = input.split(COMMA.value, CLONE.value).map { it.toIntOrNull() }
+    private fun splitDelimiter(): List<String> {
+        val numbers = input.split(COMMA.value, CLONE.value)
         return numbers
     }
 
-    private fun splitCustomDelimiter(noCustomDelimiter: String, customDelimiter: String): List<Int?> {
-        val numbers = noCustomDelimiter.split(COMMA.value, CLONE.value, customDelimiter).map { it.toIntOrNull() }
+    private fun splitCustomDelimiter(noCustomDelimiter: String, customDelimiter: String): List<String> {
+        val numbers = noCustomDelimiter.split(COMMA.value, CLONE.value, customDelimiter)
         return numbers
     }
 }
