@@ -28,7 +28,7 @@
 
 - [X] 커스텀 구분자 지정 : "//"와 "\n" 사이에 위치하는 문자를 커스텀 구분자로 사용
 - [X] 구분자로 구분 - 커스텀 구분자, 클론(:), 쉼표(,)
-- [ ] 사용자가 잘못된 값을 입력할 경우 IllegalArgumentException 발생
+- [X] 사용자가 잘못된 값을 입력할 경우 IllegalArgumentException 발생
 
 <hr style="border: 1px solid white;">
 
